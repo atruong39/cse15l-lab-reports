@@ -14,6 +14,8 @@ Hello CSE15L!
 
 ![Image](https://is3-ssl.mzstatic.com/image/thumb/Purple18/v4/28/13/02/2813028e-b3b5-8605-e890-10521a6974bf/source/256x256bb.jpg)
 
+![Image](./screenshot.png)
+
 > Block quote text
 
 * First 
