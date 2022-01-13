@@ -138,4 +138,4 @@ There are few more tricks that can help speed up your remote workflow.
 
 ## Step 8: Conclusion
 
-That concludes the tutorial. I hoped my instructions were clear and easy to understand! 
+That concludes the tutorial. I hope you found it helpful! 
