@@ -6,7 +6,7 @@ Hello CSE 15L students! In this tutorial, we will go over how to log into your c
 
 Follow this [link](https://code.visualstudio.com/), download the VS Code installer for your platform, and run it:
 
-![Image](./step1.png)
+![Image](./step1.PNG)
 
 ## Step 2: Find Your Course-Specific Account
 
