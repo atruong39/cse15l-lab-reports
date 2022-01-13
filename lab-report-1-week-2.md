@@ -1,6 +1,6 @@
 # CSE 15L: SSH Tutorial
 
-Hello CSE 15L students! In this tutorial, we will go over how to log into your course-specific account on `ieng6` through SSH. If you are on Windows, then a preliminary step is to install OpenSSH. Follow this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) and follow the instructions. 
+Hello CSE 15L students! In this tutorial, we will go over how to log into your course-specific account on `ieng6` through `ssh`. If you are on Windows, then a preliminary step is to install OpenSSH. Follow this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) and follow the instructions. 
 
 ## Step 1: Install VS Code
 
@@ -114,20 +114,28 @@ Notice how after the `ssh cs15lwi22afi@ieng6.ucsd.edu` command, there is no prom
 
 ## Step 7: Optimizing Remote Running
 
-There are few more tricks that can help speed up your remote workflow. A handy trick is the ability to send a single command to a remote computer using quotation marks, after the `ssh` command. So, for example, using this command 
+There are few more tricks that can help speed up your remote workflow. 
 
-```
-$ ssh cs15lwi22afi@ieng6.ucsd.edu "ls"
-```
+* You can use quotation marks after `ssh` to just send a single command to a remote computer
 
-This is the following output: 
+    ```
+    $ ssh cs15lwi22afi@ieng6.ucsd.edu "ls"
+    ```
 
-![Image](./step7a.png)
+    This is the following output: 
 
-Neat! It listed the files in the home directory on the remote computer. 
+    ![Image](./step7a.png)
 
-You can run multiple commands using semicolons:
+    Neat! It listed the files in the home directory on the remote computer. 
 
-```
-cp WhoAmI.java WhoAmICopy.java; javac WhoAmICopy.java; java WhoAmICopy 
-```
+* You can run multiple commands using semicolons:
+
+    ```
+    cp WhoAmI.java WhoAmICopy.java; javac WhoAmICopy.java; java WhoAmI
+    ```
+
+* You can use the arrow keys to cycle through previously entered commands. 
+
+## Step 8: Conclusion
+
+That concludes the tutorial. I hoped my instructions were clear and easy to understand! 
