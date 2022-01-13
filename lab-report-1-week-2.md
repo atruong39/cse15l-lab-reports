@@ -88,7 +88,7 @@ Next we will talk about how to expedite the process of working with remote compu
 
 ## Step 6: Setting an SSH Key
 
-So far, we have had to use our password several times and after a certain point it can become tedious. A solution to this is using `ssh` keys which create a pair of files called a *private key* and a *public key*. You copy the *public key* onto a specific location on the server, and the *private key* in a specific location on the client. Then, `ssh` can use these files instead of your password. 
+So far, we have had to use our password every time we wanted to connect to `ieng6` and after a certain point it can become tedious. A solution to this is using `ssh` keys which create a pair of files called a *private key* and a *public key*. You copy the *public key* onto a specific location on the server, and the *private key* in a specific location on the client. Then, `ssh` can use these files instead of your password. 
 
 To start, enter the following command: 
 
