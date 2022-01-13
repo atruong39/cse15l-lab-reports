@@ -84,7 +84,7 @@ The file `WhoAmI.java` was copied over to `ieng6`! Now you can connect through `
 
 ![Image](./step5c.png)
 
-Next we will talk about how to expeite the process of working with remote computers. 
+Next we will talk about how to expedite the process of working with remote computers. 
 
 ## Step 6: Setting an SSH Key
 
