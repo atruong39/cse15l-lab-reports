@@ -40,7 +40,7 @@ Which of these links work?
 
 [Lab Report 1](lab-report-1-week-2.html)
 
-[Lab Report 1](https://atruong39.github.io/lab-report-1-week-2/lab-report-1-week-2.html)
+[Lab Report 1](https://atruong39.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
 
 
 [Lab Report 1](./lab-report-1-week-2.html)
