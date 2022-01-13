@@ -73,7 +73,7 @@ Compile and run the file using `javac` and `java`. You should see your usename o
 Now type the following command: 
 
 ```
-$ scp `WhoAmI.java` cs15lwi22afi@ieng6.ucsd.edu:~/
+$ scp WhoAmI.java cs15lwi22afi@ieng6.ucsd.edu:~/
 ```
 
 Once you enter the password for your `ieng6` account. This will be the following output:
