@@ -16,7 +16,7 @@ Follow this [link](https://sdacs.ucsd.edu/~icc/index.php) and enter your student
 cs15lwi22xxx
 ```
 
-The `xxx` part of this string should be some other combination of letters or number unique to you. This string will be your username for `ieng6`. For this tutorial, we will using my username `cs15lwi22afi` as an example. 
+The `xxx` part of this string should be some other combination of letters or number unique to you. This string will be your username for `ieng6`. For this tutorial, we will be using my username `cs15lwi22afi` as an example. 
 
 ## Step 3: Connect Remotely 
 
@@ -30,7 +30,7 @@ Then enter the following command:
 $ ssh cs15lwi22afi@ieng6.ucsd.edu
 ```
 
-Since this is likely your first time connecting to this server, you will likely get a message like this: 
+Since this is likely your first time connecting to the server, you will likely get a message like this: 
 
 ![Image](./step3b.png)
 
@@ -55,7 +55,7 @@ The `pwd` command prints the current working directory. The result of entering t
 
 ![Image](./step4b.png)
 
-The `mkdir` command lets you create a new directory in the current working directory. To create a new folder named something like `my_folder`, you would enter this command: 
+The `mkdir` command lets you create a new directory in the current working directory. Let's create a new folder called `my_folder`. We use the following command to do so: 
 
 ```
 mkdir my_folder
@@ -63,7 +63,7 @@ mkdir my_folder
 
 ![Image](./step4c.png)
 
-You can see `my_folder` appear in the output of `ls`.
+You can now see `my_folder` as part of the output of `ls`.
 
 The `cd` command changes the working directory to the specified directory. So for example, to enter the `my_folder` command we just created, we would enter this command: 
 
@@ -75,15 +75,13 @@ cd ./my_folder
 
 ![Image](./step4d.png)
 
-Notice how after using `pwd` after this command, it now outputs `my_folder`.
+Notice how using `pwd` again after this command, it now outputs `my_folder`.
 
-The `cp` command lets you copy files. The first argument is the source file and the second argument is the destination, including the name of the copy. So for example, in the following screenshot, look at how I return to the `cs15lwi22afi` directory to copy `text-file1.txt` into `my_folder`:
+The `cp` command lets you copy files. The first argument is the source file and the second argument is the destination. So for example, in the following screenshot, look at how I return to the `cs15lwi22afi` directory to copy `text-file1.txt` into `my_folder`:
 
 ![Image](step4e.png)
 
 Notice how before running the `cp` command, using `ls` in `my_folder` returned nothing as the folder was empty. Now it returns the `text-file1.txt`, the that we copied from `cs15lwi22afi`.
-
-There basic commands should be enough to get you started on some projects.
 
 ## Step 5: Moving Files with `scp`
 
@@ -133,7 +131,7 @@ Press enter when prompted for a file and passphrase. The output should be someth
 
 ![Image](./step6a.png)
 
-If you are on Windows, then you will also need to the extra `ssh-add` steps at this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).
+If you are on Windows, then you will also need to do the extra `ssh-add` steps at this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).
 
 This created your public and private key files on your computer, stored in the `.ssh` directory. Now we need to copy the public key file to the `.ssh` directory of your account on `ieng6`:
 
@@ -164,20 +162,18 @@ There are few more tricks that can help speed up your remote workflow.
 * You can run multiple commands using semicolons:
 
     ```
-    cp WhoAmI.java WhoAmICopy.java; javac WhoAmICopy.java; java WhoAmI
+    $ cp WhoAmI.java WhoAmICopy.java; javac WhoAmICopy.java; java WhoAmI
     ```
 
-    This is an extremely versatile shortcut. For example, you could c
+* You can use the arrow keys to cycle through previously entered commands. This is an extremely useful shortcut since very often, when programming, there are certain commands that you will need to repeat multiple times. For example, after making changes to a `.java` file, you will then need to run `javac` to compile the file and then `java` to run it. In addition, using this shortcut will help prevent typos.
 
-* You can use the arrow keys to cycle through previously entered commands. This is an extremely useful shortcut since very often, when programming, there are certain commands that you will need to repeat multiple times. For example, after making changes to a `.java` file, you will then need to run `javac` to compile the file and the `java` to run it. In addition, using this shortcut will help prevent typos.
-
-All of these shortcuts combined, in addition to logging in with SSH keys, will help you program more smoothly and efficiently. For example, the following command, along with the arrow key shortcut, will allow us to upload `WhoAmI.java` to `ieng6` and compile and run it on `ieng6` in just two keystrokes:
+All of these shortcuts combined, in addition to logging in with SSH keys, will help you program more smoothly and efficiently. For example, the following command uploads `WhoAmI.java` to `ieng6` and compile and run it on `ieng6`. 
 
 ```
 scp WhoAmI.java cs15lwi22afi@ieng6.ucsd.edu:~/; ssh cs15lwi22afi@ieng6.ucsd.edu "javac WhoAmI.java; java WhoAmI"
 ```
 
-Assuming that it was the last command in the terminal, the keystrokes are "up arrow" and then "enter." 
+So assuming that this was the last command you entered in the terminal, you could make a change to `WhoAmI.java` and have it uploaded to, and compiled and ran on `ieng6` in just two keystrokes by pressing the "Up Arrow" key and "Enter"!
 
 ## Step 8: Conclusion
 
