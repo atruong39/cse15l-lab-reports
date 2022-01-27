@@ -169,9 +169,15 @@ There are few more tricks that can help speed up your remote workflow.
 
     This is an extremely versatile shortcut. For example, you could c
 
-* You can use the arrow keys to cycle through previously entered commands. This is an extremely useful shortcut since very often, when programming, there are certain commands that you will need to repeat multiple times. For example, after making changes to a `.java` file, you will then need to run `javac` to compile the file and the `java` to run it. In addition, besides 
+* You can use the arrow keys to cycle through previously entered commands. This is an extremely useful shortcut since very often, when programming, there are certain commands that you will need to repeat multiple times. For example, after making changes to a `.java` file, you will then need to run `javac` to compile the file and the `java` to run it. In addition, using this shortcut will help prevent typos.
 
-All of these shortcuts combined will help 
+All of these shortcuts combined, in addition to logging in with SSH keys, will help you program more smoothly and efficiently. For example, the following command, along with the arrow key shortcut, will allow us to upload `WhoAmI.java` to `ieng6` and compile and run it on `ieng6` in just two keystrokes:
+
+```
+scp WhoAmI.java cs15lwi22afi@ieng6.ucsd.edu:~/; ssh cs15lwi22afi@ieng6.ucsd.edu "javac WhoAmI.java; java WhoAmI"
+```
+
+Assuming that it was the last command in the terminal, the keystrokes are "up arrow" and then "enter." 
 
 ## Step 8: Conclusion
 
