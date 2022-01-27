@@ -44,13 +44,46 @@ Congratulations, you have just connected to a computer in the basement of the CS
 
 ## Step 4: Trying Out Commands
 
-Some basic commands you should try out are `cd`, `ls`, `pwd`, `mkdir`, and `cp`. Try to figure out what each one does. 
+Some basic commands you should try out are `cd`, `ls`, `pwd`, `mkdir`, and `cp`. 
 
-For example, here is the output for `ls`:
+The `ls` command lists all files in the current working directory: 
 
 ![Image](./step4a.png)
 
-The `ls` command lists all files in the current working directory. 
+
+The `pwd` command prints the current working directory. The result of entering the command: 
+
+![Image](./step4b.png)
+
+The `mkdir` command lets you create a new directory in the current working directory. To create a new folder named something like `my_folder`, you would enter this command: 
+
+```
+mkdir my_folder
+```
+
+![Image](./step4c.png)
+
+You can see `my_folder` appear in the output of `ls`.
+
+The `cd` command changes the working directory to the specified directory. So for example, to enter the `my_folder` command we just created, we would enter this command: 
+
+```
+cd ./my_folder
+```
+
+(The `.` indicates the working directory)
+
+![Image](./step4d.png)
+
+Notice how after using `pwd` after this command, it now outputs `my_folder`.
+
+The `cp` command lets you copy files. The first argument is the source file and the second argument is the destination, including the name of the copy. So for example, in the following screenshot, look at how I return to the `cs15lwi22afi` directory to copy `text-file1.txt` into `my_folder`:
+
+![Image](step4e.png)
+
+Notice how before running the `cp` command, using `ls` in `my_folder` returned nothing as the folder was empty. Now it returns the `text-file1.txt`, the that we copied from `cs15lwi22afi`.
+
+There basic commands should be enough to get you started on some projects.
 
 ## Step 5: Moving Files with `scp`
 
@@ -126,7 +159,7 @@ There are few more tricks that can help speed up your remote workflow.
 
     ![Image](./step7a.png)
 
-    Neat! It listed the files in the home directory on the remote computer. 
+    Neat! It listed the files in the home directory on the remote computer. This command is useful since sometimes, you do not need to login to a remote computer for anything more than a single command. 
 
 * You can run multiple commands using semicolons:
 
@@ -134,7 +167,11 @@ There are few more tricks that can help speed up your remote workflow.
     cp WhoAmI.java WhoAmICopy.java; javac WhoAmICopy.java; java WhoAmI
     ```
 
-* You can use the arrow keys to cycle through previously entered commands. 
+    This is an extremely versatile shortcut. For example, you could c
+
+* You can use the arrow keys to cycle through previously entered commands. This is an extremely useful shortcut since very often, when programming, there are certain commands that you will need to repeat multiple times. For example, after making changes to a `.java` file, you will then need to run `javac` to compile the file and the `java` to run it. In addition, besides 
+
+All of these shortcuts combined will help 
 
 ## Step 8: Conclusion
 
