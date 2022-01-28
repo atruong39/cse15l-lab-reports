@@ -42,4 +42,14 @@ Output for the version where it was failing:
 []
 ```
 
-The symptom was the program was outputting `[]` when it should have been `[a link on the first line]`. The bug was with the regular expression used: `"[^!]\\[.*\\]+\\((.*)\\)"`. A regular expression that worked for `test-file.8.md` was: `"(?<!!)\\[.*\\]+\\((.*)\\)"`, the difference being with how the regex chooses to omit the `!` used to denote image links. The problem with the failure inducing input is not clear to me as I am not very experienced with regular expressions. 
+The symptom was the program was outputting `[]` when it should have been `[a link on the first line]`. The bug was with the regular expression used:
+
+```
+"[^!]\\[.*\\]+\\((.*)\\)"
+```
+A regular expression that worked for `test-file.8.md` was: 
+```
+"(?<!!)\\[.*\\]+\\((.*)\\)"
+```
+
+The difference is how the regex chooses to omit the `!` used to denote image links. The problem with the failure inducing input is not clear to me as I am not very experienced with regular expressions. 
