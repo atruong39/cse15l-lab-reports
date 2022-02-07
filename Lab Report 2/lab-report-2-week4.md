@@ -8,7 +8,14 @@ Code difference:
 
 File which prompted change: [new-test.md](https://github.com/atruong39/markdown-parse/blob/main/new-test.md)
 
-Output for the version where it was failing was an infinite loop. 
+Output for the version where it was failing: 
+
+```
+$ javac MarkdownParse.java; java MarkdownParse new-test.md
+
+```
+
+(Infinite loop)
 
 The issue with the failure-inducing input was that there was additional characters after the last markdown link. The bug was at line 21, where we make the assumption that the last markdown link will be at the end of the markdown file. As a result, after the `while` loop goes through the last markdown link, we got the symptom of an infinite loop in which `currentIndex` is simply assigned to the value `closeParen + 1`.
 
@@ -23,6 +30,7 @@ File which prompted change: [new-test3.md](https://github.com/atruong39/markdown
 Output for the version where it was failing:
 
 ```
+$ javac MarkdownParse.java; java MarkdownParse new-test3.md
 [image.png]
 ```
 
@@ -39,6 +47,7 @@ File which prompted change: [test-file8.md](https://github.com/atruong39/markdow
 Output for the version where it was failing:
 
 ```
+$ javac MarkdownParse.java; java MarkdownParse test-file8.md
 []
 ```
 
