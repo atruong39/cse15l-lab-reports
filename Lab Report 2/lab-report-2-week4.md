@@ -11,7 +11,7 @@ File which prompted change: [new-test.md](https://github.com/atruong39/markdown-
 Output for the version where it was failing: 
 
 ```
-$ javac MarkdownParse.java; java MarkdownParse new-test.md
+$ java MarkdownParse new-test.md
 
 ```
 
@@ -30,7 +30,7 @@ File which prompted change: [new-test3.md](https://github.com/atruong39/markdown
 Output for the version where it was failing:
 
 ```
-$ javac MarkdownParse.java; java MarkdownParse new-test3.md
+$ java MarkdownParse new-test3.md
 [image.png]
 ```
 
@@ -47,7 +47,7 @@ File which prompted change: [test-file8.md](https://github.com/atruong39/markdow
 Output for the version where it was failing:
 
 ```
-$ javac MarkdownParse.java; java MarkdownParse test-file8.md
+$ java MarkdownParse test-file8.md
 []
 ```
 
