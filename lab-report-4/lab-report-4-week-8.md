@@ -93,13 +93,13 @@ Test implementation for jdweak's repo (using my `getLinksTest` method):
 
 All 3 tests failed 
 
-![5](./5.PNG)
+![4](./4.PNG)
 
 ## Test results for jdweak's repo 
 
 All 3 tests failed
 
-![4](./4.PNG)
+![5](./5.PNG)
 
 ## Questions
 
