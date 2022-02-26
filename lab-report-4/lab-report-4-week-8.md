@@ -34,7 +34,7 @@ For the second code snippet:
 [some escaped \[ brackets \]](example.com)
 ```
 
-The expected result was
+The expected result was:
 
 ```
 [a.com, a.com(()), example.com]
@@ -69,7 +69,7 @@ And there's still some more text after that.
 And then there's more text
 ```
 
-The expected result as
+The expected result was:
 
 ```
 [https://ucsd-cse15l-w22.github.io/]
@@ -129,7 +129,7 @@ All 3 tests failed
 
 3. I think a small change is possible to make my implementation work with the third code snippet, and all similar cases. Some changes need to be made to my regex in order to account for the number of vertical whitespace characters such as `\n`. 
 
-    In anywhere except the URL argument of the link syntax, there can be at least one vertical whitespace character. However if there are two or more consecutively, then the syntax to become invalid. 
+    In anywhere except the URL argument of the link syntax, there can be at most one vertical whitespace character. If there are two or more consecutively, then the syntax to become invalid. 
 
     A new regex I came up with is:
 
