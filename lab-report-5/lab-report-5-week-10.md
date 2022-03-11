@@ -36,7 +36,7 @@ Joe's implementation:
 [./target.md]
 ```
 
-Joe's implementation is incorrect as the text portion of the link syntax must have at least one non-whitespace character. Some additional code would be required to check the text portion and see if it meets these conditions. 
+Joe's implementation is incorrect as the text portion of the link syntax must have at least one non-whitespace character. It would require some additional code to check the text portion and see if it meets these conditions. 
 
 ## Results for `516.md`
 
@@ -59,4 +59,4 @@ Joe's implementation:
 [moon.jpg]
 ```
 
-Joe's implementation is incorrect as while it correctly checks for nested links, it does not check if those nested links are images. If the text portion did not have the exclamation point, then Joe's implementation would be correct. Some additional code would be requried to ensure that if there is a nested link syntax, that it is not actually image syntax. 
+Joe's implementation is incorrect as while it correctly checks for nested links, it does not check if those nested links are images. If the text portion did not have the exclamation point, then Joe's implementation would be correct. It would require some additional code to ensure that if there is a nested link syntax, that it is not actually image syntax. 
